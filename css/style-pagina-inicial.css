@@ -199,7 +199,7 @@ main {
 
 .container-imagem-sobre {
     /* border: 1px solid blue; */
-    background-image: url(../images/planta8.webp);
+    background-image: url(./images/planta8.webp);
     background-size: cover;
     background-position: center center;
     width: 50%;
@@ -311,7 +311,7 @@ main {
 /* PLANTA COMPLETA */
 .container-planta-completa {
     /* border: 1px solid red; */
-    background-image: url(../images/planta11.jpg);
+    background-image: url(./images/planta11.jpg);
     background-size: cover;
     background-position: center center;
     height: 300px;
