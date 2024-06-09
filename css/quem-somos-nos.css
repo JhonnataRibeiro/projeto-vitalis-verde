@@ -104,7 +104,7 @@ header {
 
 /* QUEM SOMOS NÓS */
 .container-quem-somos-nos {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,6 +113,7 @@ header {
 
 .container-quem-somos-nos h1 {
     font-size: 50px;
+    margin-top: 20px;
 }
 
 .sub-titulo {
@@ -128,8 +129,13 @@ header {
 }
 
 /* MEMBROS */
+.container-membros h2 {
+    font-size: 40px;
+    margin-left: 40px;
+}
+
 .container-person {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .container-linha-card {
@@ -137,11 +143,50 @@ header {
 }
 
 .card-person {
-    border: 1px solid purple;
-    width: 25%;
-    height: 300px;
+    /* border: 1px solid purple; */
+    width: 33.33%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-person div {
+    border: 1px solid #DADCE0;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 13px rgba(102, 102, 102, 0.459);
 }
 
 .card-person img {
     width: 300px;
+    box-shadow: 2px 2px 13px rgba(102, 102, 102, 0.3);
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+#card-person1 {
+    margin-top: 30px;
+}
+
+#card-person2 {
+    margin-top: -30px;
+}
+
+#card-person3 {
+    margin-top: 100px;
+}
+
+.card-person h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.card-person p {
+    text-align: center;
 }
