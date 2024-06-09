@@ -65,7 +65,7 @@ header {
 }
 
 .container-navbar a:hover {
-    color: #C6FF00;
+    color: #85aa00;
     border-bottom: 1px solid #C6FF00;
 }
 
@@ -86,17 +86,19 @@ header {
 
 .container-lupa-button button {
     margin: 0 0 0 20px;
-    border: 1px solid black;
+    border: 1px solid #DADCE0;
     background-color: white;
     font-size: 16px;
     font-weight: 600;
     border-radius: 20px;
     padding: 10px 20px;
     transition: 500ms;
+    box-shadow: 0px 0px 10px #c8ff0000;
 }
 
 .container-lupa-button button:hover {
     background-color: #C6FF00;
+    box-shadow: 0px 0px 10px #c8ff0096;
     cursor: pointer;
 }
 
@@ -135,6 +137,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 #img1 {
@@ -153,7 +156,7 @@ main {
 .container-sobre-plantas {
     /* border: 1px solid red; */
     height: 400px;
-    margin-top: 50px;
+    margin-top: 65px;
     display: flex;
 }
 
@@ -164,6 +167,7 @@ main {
 }
 
 .container-texto-sobre h2 {
+    margin-top: 50px;
     margin-left: 50px;
     font-size: 70px;
 }
@@ -181,7 +185,7 @@ main {
 }
 
 .container-texto-sobre button {
-    border: 1px solid black;
+    border: 1px solid #DADCE0;
     background-color: white;
     margin-top: 20px;
     margin-left: 50px;
@@ -190,20 +194,25 @@ main {
     border-radius: 20px;
     padding: 10px 20px;
     transition: 500ms;
+    box-shadow: 0px 0px 10px #c8ff0000;
 }
 
 .container-texto-sobre button:hover {
     background-color: #C6FF00;
+    box-shadow: 0px 0px 10px #c8ff0096;
     cursor: pointer;
 }
 
 .container-imagem-sobre {
     /* border: 1px solid blue; */
-    background-image: url(../images/planta8.webp);
+    background-image: url(../images/planta4.webp);
     background-size: cover;
     background-position: center center;
+    border-start-start-radius: 20px;
+    border-end-start-radius: 20px;
     width: 50%;
     height: 100%;
+    box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* DESCUBRA */
@@ -256,13 +265,14 @@ main {
 }
 
 .card-plantar {
-    border: 1px solid black;
+    border: 1px solid #DADCE0;
     border-radius: 30px;
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card-plantar img {
@@ -283,7 +293,7 @@ main {
 }
 
 .card-plantar button {
-    border: 1px solid black;
+    border: 1px solid #DADCE0;
     background-color: white;
     font-size: 16px;
     font-weight: 600;
@@ -291,10 +301,12 @@ main {
     padding: 10px 20px;
     transition: 500ms;
     margin: 10px 0 40px 0;
+    box-shadow: 0px 0px 9px #c8ff0000;
 }
 
 .card-plantar button:hover {
     background-color: #C6FF00;
+    box-shadow: 0px 0px 10px #c8ff0096;
     cursor: pointer;
 }
 
@@ -311,10 +323,11 @@ main {
 /* PLANTA COMPLETA */
 .container-planta-completa {
     /* border: 1px solid red; */
-    background-image: url(../images/planta11.jpg);
+    background-image: url(../images/planta5.jpg);
     background-size: cover;
     background-position: center center;
     height: 300px;
+    /* box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.3); */
 }
 
 /* RODAPÉ */
@@ -386,7 +399,7 @@ footer {
 }
 
 .container-nav-rodape a:hover {
-    color: #C6FF00;
+    color: #85aa00;
     cursor: pointer;
 }
 
