@@ -104,7 +104,7 @@ header {
 main {
     /* border: 1px solid red; */
     width: 100%;
-    height: calc(100vh - 80px);
+    /* height: calc(100vh - 80px); */
 }
 
 .container-h1-text {
@@ -199,7 +199,7 @@ main {
 
 .container-imagem-sobre {
     /* border: 1px solid blue; */
-    background-image: url(./images/planta8.webp);
+    background-image: url(../images/planta8.webp);
     background-size: cover;
     background-position: center center;
     width: 50%;
@@ -311,7 +311,7 @@ main {
 /* PLANTA COMPLETA */
 .container-planta-completa {
     /* border: 1px solid red; */
-    background-image: url(./images/planta11.jpg);
+    background-image: url(../images/planta11.jpg);
     background-size: cover;
     background-position: center center;
     height: 300px;
@@ -319,8 +319,81 @@ main {
 
 /* RODAPÉ */
 footer {
-    height: 400px;
+    /* height: 400px; */
     background-color: #F1F3F4;
-    bottom: -0px;
-    left: 0;
+}
+
+.container-redes-sociais {
+    width: 85%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 1px solid #DADCE0;
+    margin-bottom: 20px;
+}
+
+.container-redes-sociais p {
+    color: #202124;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* margin-left: 50px; */
+}
+
+.container-redes-sociais img {
+    width: 22px;
+    margin: 0 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container-redes-sociais img:hover {
+    cursor: pointer;
+}
+
+.container-nav-rodape {
+    /* border: 1px solid red; */
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.container-nav-rodape p {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.container-nav-rodape ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.container-nav-rodape li {
+    margin: 15px 0;
+}
+
+.container-nav-rodape a {
+    text-decoration: none;
+    color: #5F6368;
+    font-weight: 500;
+    transition: 500ms;
+}
+
+.container-nav-rodape a:hover {
+    color: #C6FF00;
+    cursor: pointer;
+}
+
+.container-direitos {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 0.9em;
+    color: #555;
 }
