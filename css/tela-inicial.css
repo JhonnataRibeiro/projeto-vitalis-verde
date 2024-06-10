@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    color: black;
+}
+
+/* CABEÇALHO */
+header {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 80px;
+    /* border-end-end-radius: 30px; */
+    /* border-end-start-radius: 30px; */
+    box-shadow: 2px 2px 13px rgba(102, 102, 102, 0.3);
+}
+
+.container-nav-bar {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#logo-site {
+    width: 150px;
+}
+
+.container-nav-bar img {
+    width: 18px;
+}
+
+#lupa {
+    margin-right: 15px;
+}
+
+/* TELA PRINCIPAL */
+.container-h1-text {
+    /* border: 1px solid red; */
+    margin-top: 50px;
+}
+
+.container-h1-text p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.container-h1-text h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.container-imagens {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.container-imagens img {
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* SOBRE AS PLANTAS */
+.container-sobre-plantas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-sobre-plantas h2 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.container-sobre-plantas p {
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.container-sobre-plantas button {
+    border: 1px solid #DADCE0;
+    background-color: white;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 500ms;
+    box-shadow: 0px 0px 10px #c8ff0000;
+}
+
+.container-sobre-plantas button:hover {
+    background-color: #C6FF00;
+    box-shadow: 0px 0px 10px #c8ff0096;
+    cursor: pointer;
+}
+
+/* IMAGEM 1 */
+.container-imagem1 {
+    width: 100%;
+    height: 300px;;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* DESCUBRA */
+.container-descubra {
+    display: flex;
+    justify-content: center;
+}
+
+.container-descubra h2 {
+    width: 90%;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* CARD */
+.container-plantar, .container-fazer {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.card-plantar {
+    border: 1px solid #DADCE0;
+    border-radius: 30px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-plantar img {
+    width: 80px;
+    margin: 40px 0 0 0;
+}
+
+.card-plantar h3 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.card-plantar p {
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card-plantar button {
+    border: 1px solid #DADCE0;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 500ms;
+    margin: 10px 0 40px 0;
+    box-shadow: 0px 0px 9px #c8ff0000;
+}
+
+.card-plantar button:hover {
+    background-color: #C6FF00;
+    box-shadow: 0px 0px 10px #c8ff0096;
+    cursor: pointer;
+}
+
+.container-fazer {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-planta-completa {
+    /* border: 1px solid red; */
+    background-image: url(../images/planta5.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    /* box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.3); */
+}
+
+/* RODAPÉ */
+footer {
+    /* height: 400px; */
+    background-color: #F1F3F4;
+}
+
+.container-redes-sociais {
+    width: 85%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 1px solid #DADCE0;
+    margin-bottom: 20px;
+}
+
+.container-redes-sociais p {
+    color: #202124;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* margin-left: 50px; */
+}
+
+.container-redes-sociais img {
+    width: 22px;
+    margin: 0 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container-redes-sociais img:hover {
+    cursor: pointer;
+}
+
+.container-nav-rodape {
+    /* border: 1px solid red; */
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.container-nav-rodape p {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.container-nav-rodape ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.container-nav-rodape li {
+    margin: 15px 0;
+}
+
+.container-nav-rodape a {
+    text-decoration: none;
+    color: #5F6368;
+    font-weight: 500;
+    transition: 500ms;
+}
+
+.container-nav-rodape a:hover {
+    color: #85aa00;
+    cursor: pointer;
+}
+
+.container-direitos {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 0.9em;
+    color: #555;
+}

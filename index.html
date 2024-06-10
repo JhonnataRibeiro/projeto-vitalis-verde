@@ -4,28 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitalis Verde</title>
-    <link rel="stylesheet" href="./css/style-index.css">
+    <link rel="stylesheet" href="./css/tela-inicial.css">
     <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <div class="container-cabecalho">
-            <div class="container-logo">
-                <a href="./index.html"><img src="./icons/logo.svg" alt=""></a>
-            </div>
-
-            <div class="container-navbar">
-                <ul>
-                    <li><a id="pagina-inicial" href="./index.html">Página Inicial</a></li>
-                    <li><a id="plantas-medicinais" href="./plantas-medicinais.html">Plantas Medicinais</a></li>
-                    <li><a id="formas-uso" href="./formas-de-uso.html">Formas de Uso</a></li>
-                    <li><a id="quem-somos" href="./quem-somos-nos.html">Quem Somos Nós</a></li>
-                </ul>
-            </div>
-
-            <div class="container-lupa-button">
-                <img src="./icons/lupa.png" alt="">
-                <button>Explorar Plantas</button>
+        <div class="container-nav-bar">
+            <img id="logo-site" src="./icons/logo.svg" alt="">
+            
+            <div>
+                <img id="lupa" src="./icons/lupa.png" alt="">
+                <img src="./icons/menu.png" alt="">
             </div>
         </div>
     </header>
@@ -38,46 +27,36 @@
         </div>
 
         <div class="container-imagens">
-            <img id="img1" src="./images/planta1.jpg" alt="">
-            <img id="img2" src="./images/planta2.jpg" alt="">
-            <img id="img3" src="./images/planta3.jpg" alt="">
+            <img id="img1" src="./images/planta2.jpg" alt="">
         </div>
 
         <div class="container-sobre-plantas">
-            <div class="container-texto-sobre">
-                <h2>Você sabia?</h2>
-                <p>Que muitas <strong>plantas</strong> comuns têm poderes curativos incríveis? Desde tempos antigos, elas tratam doenças e promovem o bem-estar. No nosso site, aprenda a usar essas maravilhas de forma segura e eficaz.</p>
-                <button>Saiba mais</button>
-            </div>
-
-            <div class="container-imagem-sobre"></div>
+            <h2>Você sabia?</h2>
+            <p>Que muitas <strong>plantas</strong> comuns têm poderes curativos incríveis? Desde tempos antigos, elas tratam doenças e promovem o bem-estar. No nosso site, aprenda a usar essas maravilhas de forma segura e eficaz.</p>
+            <button>Saiba mais</button>
         </div>
+
+        <div class="container-imagem1" style="background-image: url(./images/planta4.webp);"></div>
 
         <div class="container-descubra">
-            <div class="container-icons-descubra"></div>
+            <h2>Descubra os poderes das plantas com <strong>Vitalis Verde</strong>: seu guia no mundo das plantas medicinais.</h2>
+        </div>
 
-            <div class="container-texto-descubra">
-                <h2>Descubra os poderes das plantas com <strong>Vitalis Verde</strong>: seu guia no mundo das plantas medicinais.</h2>
+        <div class="container-plantar">
+            <div class="card-plantar">
+                <img src="./icons/planta-no-vaso.png" alt="">
+                <h3>Como cutivar uma planta?</h3>
+                <p>Para cultivar uma planta com sucesso, é importante seguir alguns passos fundamentais.</p>
+                <button>Aprender</button>
             </div>
         </div>
 
-        <div class="container-plantar-fazer">
-            <div class="container-plantar">
-                <div class="card-plantar">
-                    <img src="./icons/planta-no-vaso.png" alt="">
-                    <h3>Como cutivar uma planta?</h3>
-                    <p>Para cultivar uma planta com sucesso, é importante seguir alguns passos fundamentais.</p>
-                    <button>Aprender</button>
-                </div>
-            </div>
-
-            <div class="container-fazer">
-                <div class="card-plantar">
-                    <img src="./icons/remedio-de-planta.png" alt="">
-                    <h3>Como fazer remédio caseiro?</h3>
-                    <p>Para fazer um remédio caseiro eficaz, você pode seguir estas etapas simples.</p>
-                    <button>Aprender</button>
-                </div>
+        <div class="container-fazer">
+            <div class="card-plantar">
+                <img src="./icons/remedio-de-planta.png" alt="">
+                <h3>Como fazer preparar?</h3>
+                <p>Para fazer um remédio caseiro eficaz, você pode seguir estas etapas simples.</p>
+                <button>Aprender</button>
             </div>
         </div>
 
@@ -98,7 +77,7 @@
             <div class="box-nav-rodape">
                 <p>Sobre</p>
                 <ul>
-                    <li><a href="#">Nossa História</a></li>
+                    <li><a href="#">História</a></li>
                     <li><a href="#">Missão e Valores</a></li>
                     <li><a href="#">Equipe</a></li>
                     <li><a href="#">Contato</a></li>
@@ -122,21 +101,10 @@
                     <li><a href="#">Downloads</a></li>
                 </ul>
             </div>
-            <div class="box-nav-rodape">
-                <p>Suporte</p>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Ajuda</a></li>
-                    <li><a href="#">Política de Privacidade</a></li>
-                    <li><a href="#">Termos de Serviço</a></li>
-                </ul>
-            </div>
         </div>
         <div class="container-direitos">
             &copy; 2024 Vitalis Verde. Todos os direitos reservados.
         </div>
     </footer>
-
-    <script src="./javascript/script-pagina-inicial.js"></script>
 </body>
 </html>
