@@ -69,6 +69,11 @@ header {
     border-bottom: 1px solid #C6FF00;
 }
 
+#plantas-medicinais {
+    color: #85aa00;
+    border-bottom: 1px solid #C6FF00;
+}
+
 .container-lupa-button {
     /* border: 1px solid blue; */
     display: flex;
