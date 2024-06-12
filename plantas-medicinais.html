@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="div-box">
-                    <button>Saiba mais</button>
+                    <button value="1">Saiba mais</button>
                 </div>
             </div>
 
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="div-box">
-                    <button>Saiba mais</button>
+                    <button value="2">Saiba mais</button>
                 </div>
             </div>
 
@@ -76,7 +76,7 @@
                 </div>
 
                 <div class="div-box">
-                    <button>Saiba mais</button>
+                    <button value="3">Saiba mais</button>
                 </div>
             </div>
 
@@ -94,7 +94,7 @@
                 </div>
 
                 <div class="div-box">
-                    <button>Saiba mais</button>
+                    <button value="4">Saiba mais</button>
                 </div>
             </div>
 
@@ -112,7 +112,7 @@
                 </div>
 
                 <div class="div-box">
-                    <button>Saiba mais</button>
+                    <button value="5">Saiba mais</button>
                 </div>
             </div>
 
@@ -130,7 +130,7 @@
                 </div>
 
                 <div class="div-box">
-                    <button>Saiba mais</button>
+                    <button value="6">Saiba mais</button>
                 </div>
             </div>
 
@@ -148,7 +148,7 @@
                 </div>
 
                 <div class="div-box">
-                    <button>Saiba mais</button>
+                    <button value="7">Saiba mais</button>
                 </div>
             </div>
 
@@ -166,7 +166,7 @@
                 </div>
 
                 <div class="div-box">
-                    <button>Saiba mais</button>
+                    <button value="8">Saiba mais</button>
                 </div>
             </div>
 
@@ -184,7 +184,7 @@
                 </div>
 
                 <div class="div-box">
-                    <button>Saiba mais</button>
+                    <button value="9">Saiba mais</button>
                 </div>
             </div>
 
@@ -202,7 +202,7 @@
                 </div>
 
                 <div class="div-box">
-                    <button>Saiba mais</button>
+                    <button value="10">Saiba mais</button>
                 </div>
             </div>
 
@@ -220,7 +220,7 @@
                 </div>
 
                 <div class="div-box">
-                    <button>Saiba mais</button>
+                    <button value="11">Saiba mais</button>
                 </div>
             </div>
 
@@ -238,7 +238,7 @@
                 </div>
 
                 <div class="div-box">
-                    <button>Saiba mais</button>
+                    <button value="12">Saiba mais</button>
                 </div>
             </div>
 
@@ -256,7 +256,7 @@
                 </div>
 
                 <div class="div-box">
-                    <button>Saiba mais</button>
+                    <button value="13">Saiba mais</button>
                 </div>
             </div>
 
@@ -274,7 +274,7 @@
                 </div>
 
                 <div class="div-box">
-                    <button>Saiba mais</button>
+                    <button value="14">Saiba mais</button>
                 </div>
             </div>
 
@@ -292,7 +292,7 @@
                 </div>
 
                 <div class="div-box">
-                    <button>Saiba mais</button>
+                    <button value="15">Saiba mais</button>
                 </div>
             </div>
         </div>
@@ -331,6 +331,18 @@
                 if (event.target == menuModal) {
                     menuModal.style.display = "none";
                 }
+            });
+        });
+
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            var buttons = document.querySelectorAll("button");
+
+            buttons.forEach(function(button) {
+                button.addEventListener("click", function() {
+                    localStorage.setItem("plantaId", this.value);
+                    window.location.href = "./detalhe-planta.html"; // Redireciona para a página de detalhes
+                });
             });
         });
     </script>

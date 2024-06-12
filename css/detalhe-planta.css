@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
     color: black;
+    text-decoration: none;
 }
 
 /* CABEÇALHO */
@@ -38,93 +39,43 @@ header {
     margin-right: 15px;
 }
 
-/* TITULO PRINCIPAL */
-.container-titulo-principal {
-    /* border: 1px solid orange; */
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.container-titulo-principal h1 {
-    margin-top: 50px;
-}
-
-.container-titulo-principal p {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-/* CARD PLANTA */
-.container-cards-plantas {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.card-planta {
-    border: 1px solid #DADCE0;
-    width: 80%;
-    height: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 20px;
-    margin: 20px 0;
-    box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-.card-planta div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+/* IMAGEM PRINCIPAL */
+.container-imagem-principal {
+    /* border: 1px solid red; */
+    height: 200px;
     background-size: cover;
     background-position: center center;
-    border-start-start-radius: 20px;
-    border-start-end-radius: 20px;
 }
 
-.div-box {
+.container-about-plant {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-about-plant h1 {
     margin: 10px 0;
 }
 
-.box-img {
-    /* border: 1px solid blue; */
-    width: 100%;
-    height: 180px;
+.container-about-plant p {
+    width: 80%;
+    text-align: center;
 }
 
-.card-planta h2 {
+span {
+    font-weight: 800;
     font-size: 20px;
 }
 
-.card-planta p {
+.p-negrito {
+
+}
+
+.p-descricao {
     font-size: 18px;
-}
-
-.card-planta button {
-    border: 1px solid #DADCE0;
-    background-color: white;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 20px;
-    padding: 10px 20px;
-    transition: 500ms;
-    margin-bottom: 10px;
-    box-shadow: 0px 0px 10px #c8ff0000;
-}
-
-.card-planta button:hover {
-    background-color: #C6FF00;
-    box-shadow: 0px 0px 10px #c8ff0096;
-    cursor: pointer;
+    margin-bottom: 20px;
 }
 
 /* MENU NAV BAR */
