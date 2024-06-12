@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="box-button">
-                    <button>Saiba mais</button>
+                    <button value="1" onclick="handleSaibaMais(this.value)">Saiba mais</button>
                 </div>
             </div>
 
@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="box-button">
-                    <button>Saiba mais</button>
+                    <button value="2" onclick="handleSaibaMais(this.value)">Saiba mais</button>
                 </div>
             </div>
 
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="box-button">
-                    <button>Saiba mais</button>
+                    <button value="3" onclick="handleSaibaMais(this.value)">Saiba mais</button>
                 </div>
             </div>
 
@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="box-button">
-                    <button>Saiba mais</button>
+                    <button value="4" onclick="handleSaibaMais(this.value)">Saiba mais</button>
                 </div>
             </div>
 
@@ -82,7 +82,7 @@
                 </div>
 
                 <div class="box-button">
-                    <button>Saiba mais</button>
+                    <button value="5" onclick="handleSaibaMais(this.value)">Saiba mais</button>
                 </div>
             </div>
     </main>
@@ -122,6 +122,12 @@
                 }
             });
         });
+
+
+        function handleSaibaMais(value) {
+            localStorage.setItem("preparoId", value);
+            window.location.href = "./detalhe-preparo.html";
+        }
     </script>
 </body>
 </html>
