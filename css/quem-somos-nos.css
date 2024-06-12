@@ -48,7 +48,7 @@ header {
 }
 
 .container-quem-somos-nos h1 {
-    font-size: 30px;
+    font-size: 35px;
     margin-top: 20px;
 }
 
@@ -81,7 +81,7 @@ header {
 
 .card-person {
     /* border: 1px solid purple; */
-    width: 90%;
+    width: 80%;
     height: 550px;
     display: flex;
     justify-content: center;
@@ -102,7 +102,7 @@ header {
 }
 
 .card-person img {
-    width: 300px;
+    width: 270px;
     box-shadow: 2px 2px 13px rgba(102, 102, 102, 0.3);
     border-radius: 50px;
     margin-bottom: 10px;
