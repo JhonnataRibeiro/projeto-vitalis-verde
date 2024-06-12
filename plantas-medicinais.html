@@ -1,31 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitalis Verde</title>
-    <link rel="stylesheet" href="./css/style-plantas-medicinais.css">
+    <link rel="stylesheet" href="./css/plantas-medicinais.css">
     <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <div class="container-cabecalho">
-            <div class="container-logo">
-                <a href="./index.html"><img src="./icons/logo.svg" alt=""></a>
-            </div>
-
-            <div class="container-navbar">
-                <ul>
-                    <li><a id="pagina-inicial" href="./index.html">Página Inicial</a></li>
-                    <li><a id="plantas-medicinais" href="./plantas-medicinais.html">Plantas Medicinais</a></li>
-                    <li><a id="formas-uso" href="./formas-de-uso.html">Formas de Uso</a></li>
-                    <li><a id="quem-somos" href="./quem-somos-nos.html">Quem Somos Nós</a></li>
-                </ul>
-            </div>
-
-            <div class="container-lupa-button">
-                <img src="./icons/lupa.png" alt="">
-                <button>Explorar Plantas</button>
+        <div class="container-nav-bar">
+            <img id="logo-site" src="./icons/logo.svg" alt="">
+            
+            <div>
+                <img id="lupa" src="./icons/lupa.png" alt="">
+                <img id="menu" src="./icons/menu.png" alt="">
             </div>
         </div>
     </header>
@@ -37,282 +26,313 @@
         </div>
 
         <div class="container-cards-plantas">
-            <div class="box1-cards">
-                <div class="card-planta">
-                    <div class="box-img" style="background-image: url(./images/plantas-medicinais/camomila.png);"></div>
+            <div class="card-planta">
+                <div class="box-img" style="background-image: url(./images/plantas-medicinais/camomila.png);"></div>
 
-                    <div class="div-box">
-                        <h2>Nome Científico:</h2>
-                        <p id="p-nome-cientifico">Matricaria chamomilla L.</p>
-                    </div>
-                    
-                    <div class="div-box">
-                        <h2>Nome Popular:</h2>
-                        <p>Camomila</p>
-                    </div>
-
-                    <div class="div-box">
-                        <button>Saiba mais</button>
-                    </div>
+                <div class="div-box">
+                    <h2>Nome Científico:</h2>
+                    <p id="p-nome-cientifico">Matricaria chamomilla L.</p>
+                </div>
+                
+                <div class="div-box">
+                    <h2>Nome Popular:</h2>
+                    <p>Camomila</p>
                 </div>
 
-                <div class="card-planta">
-                    <div class="box-img" style="background-image: url(./images/plantas-medicinais/erva-cidreira.jpeg);"></div>
-
-                    <div class="div-box">
-                        <h2>Nome Científico:</h2>
-                        <p id="p-nome-cientifico">Melissa officinalis</p>
-                    </div>
-                    
-                    <div class="div-box">
-                        <h2>Nome Popular:</h2>
-                        <p>Erva cidreira</p>
-                    </div>
-
-                    <div class="div-box">
-                        <button>Saiba mais</button>
-                    </div>
-                </div>
-
-                <div class="card-planta">
-                    <div class="box-img" style="background-image: url(./images/plantas-medicinais/alecrim.png);"></div>
-
-                    <div class="div-box">
-                        <h2>Nome Científico:</h2>
-                        <p id="p-nome-cientifico">Rosmarinus officialis L.</p>
-                    </div>
-                    
-                    <div class="div-box">
-                        <h2>Nome Popular:</h2>
-                        <p>Alecrim</p>
-                    </div>
-
-                    <div class="div-box">
-                        <button>Saiba mais</button>
-                    </div>
-                </div>
-
-                <div class="card-planta">
-                    <div class="box-img" style="background-image: url(./images/plantas-medicinais/hortela.png);"></div>
-
-                    <div class="div-box">
-                        <h2>Nome Científico:</h2>
-                        <p id="p-nome-cientifico">Mentha piperita L.</p>
-                    </div>
-                    
-                    <div class="div-box">
-                        <h2>Nome Popular:</h2>
-                        <p>Hortelã</p>
-                    </div>
-
-                    <div class="div-box">
-                        <button>Saiba mais</button>
-                    </div>
-                </div>
-
-                <div class="card-planta">
-                    <div class="box-img" style="background-image: url(./images/plantas-medicinais/maracuja.png);"></div>
-
-                    <div class="div-box">
-                        <h2>Nome Científico:</h2>
-                        <p id="p-nome-cientifico">Passiflora alata dryand</p>
-                    </div>
-                    
-                    <div class="div-box">
-                        <h2>Nome Popular:</h2>
-                        <p>Maracujá</p>
-                    </div>
-
-                    <div class="div-box">
-                        <button>Saiba mais</button>
-                    </div>
+                <div class="div-box">
+                    <button>Saiba mais</button>
                 </div>
             </div>
 
-            <div class="box2-cards">
-                <div class="card-planta">
-                    <div class="box-img" style="background-image: url(./images/plantas-medicinais/eucalipto.png);"></div>
+            <div class="card-planta">
+                <div class="box-img" style="background-image: url(./images/plantas-medicinais/erva-cidreira.jpeg);"></div>
 
-                    <div class="div-box">
-                        <h2>Nome Científico:</h2>
-                        <p id="p-nome-cientifico">Eucalyptus glubulus Labill.</p>
-                    </div>
-                    
-                    <div class="div-box">
-                        <h2>Nome Popular:</h2>
-                        <p>Eucalipto</p>
-                    </div>
-
-                    <div class="div-box">
-                        <button>Saiba mais</button>
-                    </div>
+                <div class="div-box">
+                    <h2>Nome Científico:</h2>
+                    <p id="p-nome-cientifico">Melissa officinalis</p>
+                </div>
+                
+                <div class="div-box">
+                    <h2>Nome Popular:</h2>
+                    <p>Erva cidreira</p>
                 </div>
 
-                <div class="card-planta">
-                    <div class="box-img" style="background-image: url(./images/plantas-medicinais/expinheira-santa.png);"></div>
-
-                    <div class="div-box">
-                        <h2>Nome Científico:</h2>
-                        <p id="p-nome-cientifico">Maytenus ilicifolia</p>
-                    </div>
-                    
-                    <div class="div-box">
-                        <h2>Nome Popular:</h2>
-                        <p>Espinheira-santa</p>
-                    </div>
-
-                    <div class="div-box">
-                        <button>Saiba mais</button>
-                    </div>
-                </div>
-
-                <div class="card-planta">
-                    <div class="box-img" style="background-image: url(./images/plantas-medicinais/malva.png);"></div>
-
-                    <div class="div-box">
-                        <h2>Nome Científico:</h2>
-                        <p id="p-nome-cientifico">Malva sylvestris L</p>
-                    </div>
-                    
-                    <div class="div-box">
-                        <h2>Nome Popular:</h2>
-                        <p>Malva</p>
-                    </div>
-
-                    <div class="div-box">
-                        <button>Saiba mais</button>
-                    </div>
-                </div>
-
-                <div class="card-planta">
-                    <div class="box-img" style="background-image: url(./images/plantas-medicinais/macela.png);"></div>
-
-                    <div class="div-box">
-                        <h2>Nome Científico:</h2>
-                        <p id="p-nome-cientifico">Achyrocline satureoides D.C.</p>
-                    </div>
-                    
-                    <div class="div-box">
-                        <h2>Nome Popular:</h2>
-                        <p>Macela</p>
-                    </div>
-
-                    <div class="div-box">
-                        <button>Saiba mais</button>
-                    </div>
-                </div>
-
-                <div class="card-planta">
-                    <div class="box-img" style="background-image: url(./images/plantas-medicinais/mastruz.png);"></div>
-
-                    <div class="div-box">
-                        <h2>Nome Científico:</h2>
-                        <p id="p-nome-cientifico">Chenopodium ambrosioides L</p>
-                    </div>
-                    
-                    <div class="div-box">
-                        <h2>Nome Popular:</h2>
-                        <p>Mastruz</p>
-                    </div>
-
-                    <div class="div-box">
-                        <button>Saiba mais</button>
-                    </div>
+                <div class="div-box">
+                    <button>Saiba mais</button>
                 </div>
             </div>
 
-            <div class="box3-cards">
-                <div class="card-planta">
-                    <div class="box-img" style="background-image: url(./images/plantas-medicinais/cravinha.png);"></div>
+            <div class="card-planta">
+                <div class="box-img" style="background-image: url(./images/plantas-medicinais/alecrim.png);"></div>
 
-                    <div class="div-box">
-                        <h2>Nome Científico:</h2>
-                        <p id="p-nome-cientifico">Caryophyllus aromaticus L.</p>
-                    </div>
-                    
-                    <div class="div-box">
-                        <h2>Nome Popular:</h2>
-                        <p>Cravinho</p>
-                    </div>
-
-                    <div class="div-box">
-                        <button>Saiba mais</button>
-                    </div>
+                <div class="div-box">
+                    <h2>Nome Científico:</h2>
+                    <p id="p-nome-cientifico">Rosmarinus officialis L.</p>
+                </div>
+                
+                <div class="div-box">
+                    <h2>Nome Popular:</h2>
+                    <p>Alecrim</p>
                 </div>
 
-                <div class="card-planta">
-                    <div class="box-img" style="background-image: url(./images/plantas-medicinais/canela.png);"></div>
+                <div class="div-box">
+                    <button>Saiba mais</button>
+                </div>
+            </div>
 
-                    <div class="div-box">
-                        <h2>Nome Científico:</h2>
-                        <p id="p-nome-cientifico">Cinnamomum ssp.</p>
-                    </div>
-                    
-                    <div class="div-box">
-                        <h2>Nome Popular:</h2>
-                        <p>Canela</p>
-                    </div>
+            <div class="card-planta">
+                <div class="box-img" style="background-image: url(./images/plantas-medicinais/hortela.png);"></div>
 
-                    <div class="div-box">
-                        <button>Saiba mais</button>
-                    </div>
+                <div class="div-box">
+                    <h2>Nome Científico:</h2>
+                    <p id="p-nome-cientifico">Mentha piperita L.</p>
+                </div>
+                
+                <div class="div-box">
+                    <h2>Nome Popular:</h2>
+                    <p>Hortelã</p>
                 </div>
 
-                <div class="card-planta">
-                    <div class="box-img" style="background-image: url(./images/plantas-medicinais/babosa-aloe-vera.png);"></div>
+                <div class="div-box">
+                    <button>Saiba mais</button>
+                </div>
+            </div>
 
-                    <div class="div-box">
-                        <h2>Nome Científico:</h2>
-                        <p id="p-nome-cientifico">Aloe Vera</p>
-                    </div>
-                    
-                    <div class="div-box">
-                        <h2>Nome Popular:</h2>
-                        <p>Erva-babosa</p>
-                    </div>
+            <div class="card-planta">
+                <div class="box-img" style="background-image: url(./images/plantas-medicinais/maracuja.png);"></div>
 
-                    <div class="div-box">
-                        <button>Saiba mais</button>
-                    </div>
+                <div class="div-box">
+                    <h2>Nome Científico:</h2>
+                    <p id="p-nome-cientifico">Passiflora alata dryand</p>
+                </div>
+                
+                <div class="div-box">
+                    <h2>Nome Popular:</h2>
+                    <p>Maracujá</p>
                 </div>
 
-                <div class="card-planta">
-                    <div class="box-img" style="background-image: url(./images/plantas-medicinais/goiabeira.png);"></div>
+                <div class="div-box">
+                    <button>Saiba mais</button>
+                </div>
+            </div>
 
-                    <div class="div-box">
-                        <h2>Nome Científico:</h2>
-                        <p id="p-nome-cientifico">Psidium guajava Linnaeus</p>
-                    </div>
-                    
-                    <div class="div-box">
-                        <h2>Nome Popular:</h2>
-                        <p>Goiaba</p>
-                    </div>
+            <div class="card-planta">
+                <div class="box-img" style="background-image: url(./images/plantas-medicinais/eucalipto.png);"></div>
 
-                    <div class="div-box">
-                        <button>Saiba mais</button>
-                    </div>
+                <div class="div-box">
+                    <h2>Nome Científico:</h2>
+                    <p id="p-nome-cientifico">Eucalyptus glubulus Labill.</p>
+                </div>
+                
+                <div class="div-box">
+                    <h2>Nome Popular:</h2>
+                    <p>Eucalipto</p>
                 </div>
 
-                <div class="card-planta">
-                    <div class="box-img" style="background-image: url(./images/plantas-medicinais/louro.png);"></div>
+                <div class="div-box">
+                    <button>Saiba mais</button>
+                </div>
+            </div>
 
-                    <div class="div-box">
-                        <h2>Nome Científico:</h2>
-                        <p id="p-nome-cientifico">Laurus nobilis L.</p>
-                    </div>
-                    
-                    <div class="div-box">
-                        <h2>Nome Popular:</h2>
-                        <p>Louro</p>
-                    </div>
+            <div class="card-planta">
+                <div class="box-img" style="background-image: url(./images/plantas-medicinais/expinheira-santa.png);"></div>
 
-                    <div class="div-box">
-                        <button>Saiba mais</button>
-                    </div>
+                <div class="div-box">
+                    <h2>Nome Científico:</h2>
+                    <p id="p-nome-cientifico">Maytenus ilicifolia</p>
+                </div>
+                
+                <div class="div-box">
+                    <h2>Nome Popular:</h2>
+                    <p>Espinheira-santa</p>
+                </div>
+
+                <div class="div-box">
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="card-planta">
+                <div class="box-img" style="background-image: url(./images/plantas-medicinais/malva.png);"></div>
+
+                <div class="div-box">
+                    <h2>Nome Científico:</h2>
+                    <p id="p-nome-cientifico">Malva sylvestris L</p>
+                </div>
+                
+                <div class="div-box">
+                    <h2>Nome Popular:</h2>
+                    <p>Malva</p>
+                </div>
+
+                <div class="div-box">
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="card-planta">
+                <div class="box-img" style="background-image: url(./images/plantas-medicinais/macela.png);"></div>
+
+                <div class="div-box">
+                    <h2>Nome Científico:</h2>
+                    <p id="p-nome-cientifico">Achyrocline satureoides D.C.</p>
+                </div>
+                
+                <div class="div-box">
+                    <h2>Nome Popular:</h2>
+                    <p>Macela</p>
+                </div>
+
+                <div class="div-box">
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="card-planta">
+                <div class="box-img" style="background-image: url(./images/plantas-medicinais/mastruz.png);"></div>
+
+                <div class="div-box">
+                    <h2>Nome Científico:</h2>
+                    <p id="p-nome-cientifico">Chenopodium ambrosioides L</p>
+                </div>
+                
+                <div class="div-box">
+                    <h2>Nome Popular:</h2>
+                    <p>Mastruz</p>
+                </div>
+
+                <div class="div-box">
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="card-planta">
+                <div class="box-img" style="background-image: url(./images/plantas-medicinais/cravinha.png);"></div>
+
+                <div class="div-box">
+                    <h2>Nome Científico:</h2>
+                    <p id="p-nome-cientifico">Caryophyllus aromaticus L.</p>
+                </div>
+                
+                <div class="div-box">
+                    <h2>Nome Popular:</h2>
+                    <p>Cravinho</p>
+                </div>
+
+                <div class="div-box">
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="card-planta">
+                <div class="box-img" style="background-image: url(./images/plantas-medicinais/canela.png);"></div>
+
+                <div class="div-box">
+                    <h2>Nome Científico:</h2>
+                    <p id="p-nome-cientifico">Cinnamomum ssp.</p>
+                </div>
+                
+                <div class="div-box">
+                    <h2>Nome Popular:</h2>
+                    <p>Canela</p>
+                </div>
+
+                <div class="div-box">
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="card-planta">
+                <div class="box-img" style="background-image: url(./images/plantas-medicinais/babosa-aloe-vera.png);"></div>
+
+                <div class="div-box">
+                    <h2>Nome Científico:</h2>
+                    <p id="p-nome-cientifico">Aloe Vera</p>
+                </div>
+                
+                <div class="div-box">
+                    <h2>Nome Popular:</h2>
+                    <p>Erva-babosa</p>
+                </div>
+
+                <div class="div-box">
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="card-planta">
+                <div class="box-img" style="background-image: url(./images/plantas-medicinais/goiabeira.png);"></div>
+
+                <div class="div-box">
+                    <h2>Nome Científico:</h2>
+                    <p id="p-nome-cientifico">Psidium guajava Linnaeus</p>
+                </div>
+                
+                <div class="div-box">
+                    <h2>Nome Popular:</h2>
+                    <p>Goiaba</p>
+                </div>
+
+                <div class="div-box">
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="card-planta">
+                <div class="box-img" style="background-image: url(./images/plantas-medicinais/louro.png);"></div>
+
+                <div class="div-box">
+                    <h2>Nome Científico:</h2>
+                    <p id="p-nome-cientifico">Laurus nobilis L.</p>
+                </div>
+                
+                <div class="div-box">
+                    <h2>Nome Popular:</h2>
+                    <p>Louro</p>
+                </div>
+
+                <div class="div-box">
+                    <button>Saiba mais</button>
                 </div>
             </div>
         </div>
     </main>
+
+    <div id="menu-modal" class="menu-modal">
+        <div class="menu-content">
+            <span id="close-menu" class="close">&times;</span>
+            <ul>
+                <li><a href="./index.html">Página Inicial</a></li>
+                <li><a href="./plantas-medicinais.html">Plantas Medicinais</a></li>
+                <li><a href="./formas-de-uso.html">Formas de Uso</a></li>
+                <li><a href="./quem-somos-nos.html">Quem Somos Nós</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuIcon = document.getElementById("menu");
+            var menuModal = document.getElementById("menu-modal");
+            var closeMenu = document.getElementById("close-menu");
+    
+            // Abrir o menu modal ao clicar no ícone do menu
+            menuIcon.addEventListener("click", function() {
+                menuModal.style.display = "block";
+            });
+    
+            // Fechar o menu modal ao clicar no 'X'
+            closeMenu.addEventListener("click", function() {
+                menuModal.style.display = "none";
+            });
+    
+            // Fechar o menu modal se clicar fora do conteúdo do menu
+            window.addEventListener("click", function(event) {
+                if (event.target == menuModal) {
+                    menuModal.style.display = "none";
+                }
+            });
+        });
+    </script>
 </body>
 </html>

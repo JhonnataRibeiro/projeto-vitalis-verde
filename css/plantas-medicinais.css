@@ -38,58 +38,74 @@ header {
     margin-right: 15px;
 }
 
-/* PREPARAÇÃO */
-.container-title {
-    /* border: 1px solid red; */
+/* TITULO PRINCIPAL */
+.container-titulo-principal {
+    /* border: 1px solid orange; */
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-titulo-principal h1 {
+    margin-top: 50px;
+}
+
+.container-titulo-principal p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* CARD PLANTA */
+.container-cards-plantas {
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
-.container-title h1 {
-    margin-top: 30px;
-}
-
-.container-title p {
-    font-size: 20px;
-}
-
-.container-cards-preparacao {
-    /* border: 1px solid blue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.card-preparo {
+.card-planta {
     border: 1px solid #DADCE0;
     width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-planta div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.3);
-    margin: 20px 0;
-}
-
-.box-title h2 {
-    margin: 20px 0 10px 0;
-}
-
-.box-imagem {
-    width: 100%;
-    height: 200px;
     background-size: cover;
     background-position: center center;
     border-start-start-radius: 20px;
     border-start-end-radius: 20px;
 }
 
-.box-button button {
+.div-box {
+    margin: 10px 0;
+}
+
+.box-img {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 180px;
+}
+
+.card-planta h2 {
+    font-size: 18px;
+}
+
+.card-planta button {
     border: 1px solid #DADCE0;
     background-color: white;
     font-size: 16px;
@@ -97,11 +113,11 @@ header {
     border-radius: 20px;
     padding: 10px 20px;
     transition: 500ms;
-    box-shadow: 0px 0px 9px #c8ff0000;
-    margin: 10px 0 20px 0;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px #c8ff0000;
 }
 
-.box-button button:hover {
+.card-planta button:hover {
     background-color: #C6FF00;
     box-shadow: 0px 0px 10px #c8ff0096;
     cursor: pointer;

@@ -13,98 +13,29 @@ header {
     /* border: 1px solid green; */
     width: 100%;
     height: 80px;
-    border-end-end-radius: 30px;
-    border-end-start-radius: 30px;
+    /* border-end-end-radius: 30px; */
+    /* border-end-start-radius: 30px; */
     box-shadow: 2px 2px 13px rgba(102, 102, 102, 0.3);
 }
 
-.container-cabecalho {
+.container-nav-bar {
     /* border: 1px solid red; */
-    width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
-.container-logo {
-    /* border: 1px solid blue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#logo-site {
+    width: 150px;
 }
 
-.container-logo img {
-    width: 160px;
+.container-nav-bar img {
+    width: 18px;
 }
 
-.container-navbar {
-    /* border: 1px solid blue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-navbar ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-.container-navbar li {
-    margin: 0 30px;
-}
-
-.container-navbar a {
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 500;
-    transition: 500ms;
-    border-bottom: 1px solid white;
-}
-
-.container-navbar a:hover {
-    color: #85aa00;
-    border-bottom: 1px solid #C6FF00;
-}
-
-#quem-somos {
-    color: #85aa00;
-    border-bottom: 1px solid #C6FF00;
-}
-
-.container-lupa-button {
-    /* border: 1px solid blue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-lupa-button img {
-    width: 20px;
-}
-
-.container-lupa-button img:hover {
-    cursor: pointer;
-}
-
-.container-lupa-button button {
-    margin: 0 0 0 20px;
-    border: 1px solid #DADCE0;
-    background-color: white;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 20px;
-    padding: 10px 20px;
-    transition: 500ms;
-    box-shadow: 0px 0px 10px #c8ff0000;
-}
-
-.container-lupa-button button:hover {
-    background-color: #C6FF00;
-    box-shadow: 0px 0px 10px #c8ff0096;
-    cursor: pointer;
+#lupa {
+    margin-right: 15px;
 }
 
 /* QUEM SOMOS NÓS */
@@ -135,31 +66,33 @@ header {
 
 /* MEMBROS */
 .container-membros h2 {
-    font-size: 40px;
-    margin-left: 40px;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0 10px 0;
 }
 
 .container-person {
     /* border: 1px solid red; */
-}
-
-.container-linha-card {
-    display: flex;
-}
-
-.card-person {
-    /* border: 1px solid purple; */
-    width: 33.33%;
-    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.card-person {
+    /* border: 1px solid purple; */
+    width: 90%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
 .card-person div {
     border: 1px solid #DADCE0;
-    padding: 20px;
+    padding: 20px 30px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -175,18 +108,6 @@ header {
     margin-bottom: 10px;
 }
 
-#card-person1 {
-    margin-top: 30px;
-}
-
-#card-person2 {
-    margin-top: -30px;
-}
-
-#card-person3 {
-    margin-top: 100px;
-}
-
 .card-person h3 {
     font-size: 30px;
     margin-bottom: 5px;
@@ -194,4 +115,64 @@ header {
 
 .card-person p {
     text-align: center;
+    font-size: 20px;
+}
+
+/* MENU NAV BAR */
+.menu-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+
+.menu-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.close {
+    color: #ff0000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-content ul li {
+    margin: 10px 0;
+}
+
+.menu-content ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+#menu:hover {
+    cursor: pointer;
 }

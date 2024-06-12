@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitalis Verde</title>
-    <link rel="stylesheet" href="./css/tela-inicial.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -14,7 +14,7 @@
             
             <div>
                 <img id="lupa" src="./icons/lupa.png" alt="">
-                <img src="./icons/menu.png" alt="">
+                <img id="menu" src="./icons/menu.png" alt="">
             </div>
         </div>
     </header>
@@ -54,7 +54,7 @@
         <div class="container-fazer">
             <div class="card-plantar">
                 <img src="./icons/remedio-de-planta.png" alt="">
-                <h3>Como fazer preparar?</h3>
+                <h3>Como preparar?</h3>
                 <p>Para fazer um remédio caseiro eficaz, você pode seguir estas etapas simples.</p>
                 <button>Aprender</button>
             </div>
@@ -106,5 +106,42 @@
             &copy; 2024 Vitalis Verde. Todos os direitos reservados.
         </div>
     </footer>
+
+    <div id="menu-modal" class="menu-modal">
+        <div class="menu-content">
+            <span id="close-menu" class="close">&times;</span>
+            <ul>
+                <li><a href="./index.html">Página Inicial</a></li>
+                <li><a href="./plantas-medicinais.html">Plantas Medicinais</a></li>
+                <li><a href="./formas-de-uso.html">Formas de Uso</a></li>
+                <li><a href="./quem-somos-nos.html">Quem Somos Nós</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuIcon = document.getElementById("menu");
+            var menuModal = document.getElementById("menu-modal");
+            var closeMenu = document.getElementById("close-menu");
+    
+            // Abrir o menu modal ao clicar no ícone do menu
+            menuIcon.addEventListener("click", function() {
+                menuModal.style.display = "block";
+            });
+    
+            // Fechar o menu modal ao clicar no 'X'
+            closeMenu.addEventListener("click", function() {
+                menuModal.style.display = "none";
+            });
+    
+            // Fechar o menu modal se clicar fora do conteúdo do menu
+            window.addEventListener("click", function(event) {
+                if (event.target == menuModal) {
+                    menuModal.style.display = "none";
+                }
+            });
+        });
+    </script>
 </body>
 </html>

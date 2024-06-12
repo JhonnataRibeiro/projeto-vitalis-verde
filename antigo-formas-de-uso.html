@@ -4,25 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitalis Verde</title>
-    <link rel="stylesheet" href="./css/formas-de-uso.css">
+    <link rel="stylesheet" href="./css/style-formas-de-uso.css">
     <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <div class="container-nav-bar">
-            <img id="logo-site" src="./icons/logo.svg" alt="">
-            
-            <div>
-                <img id="lupa" src="./icons/lupa.png" alt="">
-                <img id="menu" src="./icons/menu.png" alt="">
+        <div class="container-cabecalho">
+            <div class="container-logo">
+                <a href="./index.html"><img src="./icons/logo.svg" alt=""></a>
+            </div>
+
+            <div class="container-navbar">
+                <ul>
+                    <li><a id="pagina-inicial" href="./index.html">Página Inicial</a></li>
+                    <li><a id="plantas-medicinais" href="./plantas-medicinais.html">Plantas Medicinais</a></li>
+                    <li><a id="formas-uso" href="./formas-de-uso.html">Formas de Uso</a></li>
+                    <li><a id="quem-somos" href="./quem-somos-nos.html">Quem Somos Nós</a></li>
+                </ul>
+            </div>
+
+            <div class="container-lupa-button">
+                <img src="./icons/lupa.png" alt="">
+                <button>Explorar Plantas</button>
             </div>
         </div>
     </header>
 
     <main>
         <div class="container-title">
-            <h1>Preparação farmacologica</h1>
-            <p>Selecione uma e saiba mais.</p>
+            <h1>Selecione uma preparação farmacologica e saiba mais.</h1>
         </div>
 
         <div class="container-cards-preparacao">
@@ -85,43 +95,7 @@
                     <button>Saiba mais</button>
                 </div>
             </div>
-    </main>
-
-    <div id="menu-modal" class="menu-modal">
-        <div class="menu-content">
-            <span id="close-menu" class="close">&times;</span>
-            <ul>
-                <li><a href="./index.html">Página Inicial</a></li>
-                <li><a href="./plantas-medicinais.html">Plantas Medicinais</a></li>
-                <li><a href="./formas-de-uso.html">Formas de Uso</a></li>
-                <li><a href="./quem-somos-nos.html">Quem Somos Nós</a></li>
-            </ul>
         </div>
-    </div>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var menuIcon = document.getElementById("menu");
-            var menuModal = document.getElementById("menu-modal");
-            var closeMenu = document.getElementById("close-menu");
-    
-            // Abrir o menu modal ao clicar no ícone do menu
-            menuIcon.addEventListener("click", function() {
-                menuModal.style.display = "block";
-            });
-    
-            // Fechar o menu modal ao clicar no 'X'
-            closeMenu.addEventListener("click", function() {
-                menuModal.style.display = "none";
-            });
-    
-            // Fechar o menu modal se clicar fora do conteúdo do menu
-            window.addEventListener("click", function(event) {
-                if (event.target == menuModal) {
-                    menuModal.style.display = "none";
-                }
-            });
-        });
-    </script>
+    </main>
 </body>
 </html>
